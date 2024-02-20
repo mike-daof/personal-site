@@ -69,14 +69,14 @@ export default function Home() {
               <li>Mobile View</li>
               <li>Animate On Load</li>
               <li>Animate On Scroll</li>
-              <li>Add "this page" section</li>
+              <li>{`Add "this page" section`}</li>
             </ul>
           </div>
         </section>
 
         <section className="mt-32 w-full">
           <div className="w-full flex justify-between">
-            <div className="font-extrabold text-white text-3xl">Let's work together.</div>
+            <div className="font-extrabold text-white text-3xl">Let&apos;s work together.</div>
             <a className="font-extrabold text-white text-3xl" href="mailto:michael.ivanhoe@gmail.com">michael.ivanhoe@gmail.com</a>
           </div>
           <hr className="mt-4 bg-slate-400" />
