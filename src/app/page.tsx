@@ -21,7 +21,7 @@ export default function Home() {
           </div>
           <div className="mt-6 italic flex items-center flex-col">
             <div>Michael Daof.</div>
-            <div>Full Stack Software Engineer.</div>
+            <div>Full Stack TypeScript Engineer.</div>
             <div>React Enthusiast.</div>
           </div>
           <div className="socials mt-5 flex">
