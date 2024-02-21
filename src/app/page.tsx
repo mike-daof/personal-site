@@ -9,20 +9,20 @@ const aboutMeCopyPt2 = "I have an empathetic people-oriented approach to my work
 
 export default function Home() {
   return (
-    <main className="bg-black py-5 min-h-screen flex items-center flex-col text-slate-400 antialiased">
+    <main className="bg-black py-5 min-h-screen flex items-center flex-col text-slate-400 antialiased break-words">
 
       <PinkTag bgColor="#EC4899">Under Construction</PinkTag>
 
-      <div className="w-9/12 max-w-[1200px] pt-7 flex items-center flex-col">
+      <div className="w-11/12 md:w-9/12 max-w-[1200px] pt-2 md:pt-7 flex items-center flex-col">
         <div className="hero relative w-full flex items-center flex-col">
-          <div className="tagline max-w-[900px] text-center italic text-xl font-light">{tagline}</div>
-          <div className="mt-12 border-2 border-gray-400 h-96 w-96 rounded-full flex items-center justify-center">
-            <div className="avatar h-80 w-80 rounded-full bg-avatar bg-cover bg-center"/>
+          <div className="tagline max-w-[900px] text-center italic text-lg md:text-xl font-light">{tagline}</div>
+          <div className="animate-fade-left mt-12 border-2 border-gray-400 h-72 w-72 md:h-96 md:w-96 rounded-full flex items-center justify-center">
+            <div className="avatar brightness-75 h-60 w-60 md:h-80 md:w-80 rounded-full bg-avatar bg-cover bg-center"/>
           </div>
           <div className="mt-6 italic flex items-center flex-col">
             <div>Michael Daof.</div>
-            <div>Full Stack TypeScript Engineer.</div>
-            <div>React Enthusiast.</div>
+            <div>Full Stack TypeScript.</div>
+            <div>React Specialist.</div>
           </div>
           <div className="socials mt-5 flex">
             <div className="socail-container mx-2">
@@ -32,7 +32,7 @@ export default function Home() {
               <SocialIcon style={{ height: 40, width: 40 }} url="https://github.com/mike-daof" />
             </div>
             <div className="socail-container mx-2">
-              <SocialIcon style={{ height: 40, width: 40 }} network="email" url="michael.ivanhoe@gmail.com"/>
+              <SocialIcon style={{ height: 40, width: 40 }} bgColor="#800000" network="email" url="michael.ivanhoe@gmail.com"/>
             </div>
           </div>
         </div>
@@ -40,8 +40,8 @@ export default function Home() {
         <section className="mt-14 w-full">
           <div className="font-extrabold text-white text-3xl">about me</div>
           <hr className="mt-4 bg-slate-400" />
-          <div className="mt-4 flex">
-            <div className="section flex-1">
+          <div className="mt-4 flex flex-col md:flex-row">
+            <div className="section pr-2 flex-1">
               Skills
               <ul className="list-disc marker:text-white ml-8">
                 <li>Implementing Design Systems</li>
@@ -56,17 +56,16 @@ export default function Home() {
                 <li>Creating Product Roadmaps with agile teams</li>
               </ul>
             </div>
-            <div className="section flex-1">{aboutMeCopyPt1}<br/><br/>{aboutMeCopyPt2}</div>
+            <div className="section flex-1 pt-6 md:pt-0 pl-2">{aboutMeCopyPt1}<br/><br/>{aboutMeCopyPt2}</div>
           </div>
         </section>
 
-        <section className="mt-24 w-full">
+        <section className="mt-16 md:mt-24 w-full">
           <div className="font-extrabold text-white text-3xl">upcoming features</div>
           <hr className="mt-4 bg-slate-400" />
           <div className="content mt-4">
             <ul className="list-disc marker:text-white ml-8">
               <li>Integrate Sanity CMS</li>
-              <li>Mobile View</li>
               <li>Animate On Load</li>
               <li>Animate On Scroll</li>
               <li>{`Add "this page" section`}</li>
@@ -75,15 +74,15 @@ export default function Home() {
         </section>
 
         <section className="mt-32 w-full">
-          <div className="w-full flex justify-between">
+          <div className="w-full flex flex-col md:flex-row md:justify-between">
             <div className="font-extrabold text-white text-3xl">Let&apos;s work together.</div>
-            <a className="font-extrabold text-white text-3xl" href="mailto:michael.ivanhoe@gmail.com">michael.ivanhoe@gmail.com</a>
+            <a className="font-extrabold mt-1 text-white text-xl md:text-3xl" href="mailto:michael.ivanhoe@gmail.com">michael.ivanhoe@gmail.com</a>
           </div>
           <hr className="mt-4 bg-slate-400" />
         </section>
 
-        <div className="footer mt-6 w-full flex justify-around align-center">
-          <div className="footer text-xs w-full">icon provided by <a href="https://www.flaticon.com/authors/joalfa/glyph?author_id=521&type=standard">joalfa</a></div>
+        <div className="footer mt-3 w-full flex justify-around items-center">
+          <div className="footer text-xs w-full flex">icon provided by&nbsp;<a href="https://www.flaticon.com/authors/joalfa/glyph?author_id=521&type=standard">joalfa</a></div>
           <div className="socials flex">
             <div className="socail-container mx-1">
               <SocialIcon style={{ height: 32, width: 32 }} bgColor="#74BDCB" url="https://www.linkedin.com/in/michaeldaof/" />
