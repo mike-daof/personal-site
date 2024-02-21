@@ -61,6 +61,14 @@ export default function Home() {
         </section>
 
         <section className="mt-16 md:mt-24 w-full">
+          <div className="font-extrabold text-white text-3xl">about this page</div>
+          <hr className="mt-4 bg-slate-400" />
+          <div className="content mt-4">
+            This page is built with Next 14.1.0, React 18+, and Tailwind CSS 3.3.0.
+          </div>
+        </section>
+
+        <section className="mt-16 md:mt-24 w-full">
           <div className="font-extrabold text-white text-3xl">upcoming features</div>
           <hr className="mt-4 bg-slate-400" />
           <div className="content mt-4">
@@ -68,7 +76,6 @@ export default function Home() {
               <li>Integrate Sanity CMS</li>
               <li>Animate On Load</li>
               <li>Animate On Scroll</li>
-              <li>{`Add "this page" section`}</li>
             </ul>
           </div>
         </section>
